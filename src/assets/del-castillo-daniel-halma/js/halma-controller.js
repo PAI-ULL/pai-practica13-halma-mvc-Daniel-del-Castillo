@@ -19,18 +19,18 @@ import {HalmaView} from './halma-view.js';
  */
 export class HalmaController {
   /**
-   * @const {number} GRID_SIZE The size of the halma grid
+   * @property {number} GRID_SIZE The size of the halma grid
    * @private
   @ts-ignore */
   static #GRID_SIZE = 9;
   /**
-   * @const {HalmaView} view An instance of the HalmaView class that will
+   * @property {HalmaView} view An instance of the HalmaView class that will
    *     manage the visualization of the halma board
    * @private
   */
   #view;
   /**
-   * @const {HalmaModel} model An instance of the HalmaModel class that will
+   * @property {HalmaModel} model An instance of the HalmaModel class that will
    *     manage the logic of the game
    * @private
   */

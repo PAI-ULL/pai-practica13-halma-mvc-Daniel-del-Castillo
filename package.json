@@ -9,7 +9,7 @@
     "validate": "cat codecov.yml | curl --data-binary @- https://codecov.io/validate",
     "report": "c8 --reporter=json mocha",
     "codecov": "curl -s https://codecov.io/bash | bash",
-    "doc": "jsdoc -d src/assets/docs -c jsdoc.json --private"
+    "doc": "jsdoc -d src/assets/docs -a all -c jsdoc.json"
   },
   "type": "module",
   "repository": {

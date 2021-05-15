@@ -17,49 +17,50 @@
  */
 export class HalmaView {
   /**
-   * @const {number} gridSize The size of the halma grid
+   * @property {number} gridSize The size of the halma grid
    * @private
   */
   #gridSize;
   /**
-   * @const {number} canvasSize The size of the canvas in pixels
+   * @property {number} canvasSize The size of the canvas in pixels
    * @private
   */
   #canvasSize;
   /**
-   * @const {CanvasRenderingContext2D} canvasContext The context of the canvas
-   *     that makes it possible to draw
+   * @property {CanvasRenderingContext2D} canvasContext The context of the
+   *     canvas that makes it possible to draw
    * @private
   */
   #canvasContext;
   /**
-   * @const {HTMLElement} moveslabel A label in which to put the number of moves
+   * @property {HTMLElement} moveslabel A label in which to put the
+   *     number of moves
    * @private
   */
   #movesLabel;
   /**
-   * @param {HTMLElement} winLabel A place in which to tell
+   * @property {HTMLElement} winLabel A place in which to tell
    *     the player he has won
    * @private
   */
   #winLabel;
   /**
-   * @const {string} squareColor The color of each square in the board
+   * @property {string} squareColor The color of each square in the board
    * @private
   @ts-ignore */
   static #SQUARE_COLOR = 'rgba(255, 255, 255, 255)';
   /**
-   * @const {string} lineColor The color of each line in the board
+   * @property {string} lineColor The color of each line in the board
    * @private
   @ts-ignore */
   static #LINE_COLOR = 'rgba(128, 128, 128, 255)';
   /**
-   * @const {string} pieceColor The color of each piece in the board
+   * @property {string} pieceColor The color of each piece in the board
    * @private
   @ts-ignore */
   static #PIECE_COLOR = 'rgba(0, 0, 0, 255)';
   /**
-   * @const {number} pieceMargin The margin between each piece and the
+   * @property {number} pieceMargin The margin between each piece and the
    *     lines in pixels
    * @private
   @ts-ignore */

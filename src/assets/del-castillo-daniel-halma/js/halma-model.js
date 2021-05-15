@@ -17,50 +17,51 @@
  */
 export class HalmaModel {
   /**
-   * @const {number} gridSize The size of the halma grid
+   * @property {number} gridSize The size of the halma grid
    * @private
   */
   #gridSize;
   /**
-   * @const {number} numberOfMoves The number of moves already performed
+   * @property {number} numberOfMoves The number of moves already performed
    * @private
   */
   #numberOfMoves;
   /**
-   * @const {Array} grid The grid that represents the positions of the pieces
+   * @property {Array} grid The grid that represents the positions of the pieces
    *     in the board
    * @private
   */
   #grid;
   /**
-   * @const {Array} focused The position of the focused piece
+   * @property {Array} focused The position of the focused piece
    * @private
   */
   #focused;
   /**
-   * @const {boolean} win Whether the player has won
+   * @property {boolean} win Whether the player has won
    * @private
   */
   #win;
   /**
-   * @const {Array} startingPositions The positions in which the pieces are
+   * @property {Array} startingPositions The positions in which the pieces are
    *     placed at the start of the game.
    * @private
   */
   #startingPositions;
   /**
-   * @const {Array} finalPositions The positions that need to be covered to win
+   * @property {Array} finalPositions The positions that need to be
+   *     covered to win
    * @private
   */
   #finalPositions;
   /**
-   * @const {Array} lastJump The position for the last jump if the last move
+   * @property {Array} lastJump The position for the last jump if the last move
    *     was a jump
    * @private
   */
   #lastJump;
   /**
-   * @const {number} numberOfPieces The number of pieces. They will be placed
+   * @property {number} numberOfPieces The number of pieces. They will be placed
    *     in a square, so this number should have a exact square
    * @private
   */
@@ -173,6 +174,7 @@ export class HalmaModel {
   /**
    * The function that updates the game state after a step
    * @param {Array} position The position of the click
+   * @memberof HalmaModel
    * @method #handleStep
    * @private
    */
@@ -187,6 +189,7 @@ export class HalmaModel {
   /**
    * The function that updates the game state after a jump
    * @param {Array} position The position of the click
+   * @memberof HalmaModel
    * @method #handleJump
    * @private
    */
@@ -211,6 +214,7 @@ export class HalmaModel {
    * @param {Array} position1
    * @param {Array} position2
    * @return {number} The chebyshev distance between the positions
+   * @memberof HalmaModel
    * @method #getDistance
    * @private
    */
@@ -228,6 +232,7 @@ export class HalmaModel {
    * @param {Array} position1
    * @param {Array} position2
    * @return {Array} The position in the middle
+   * @memberof HalmaModel
    * @method #getMiddlePosition
    * @private
    */
@@ -241,8 +246,9 @@ export class HalmaModel {
 
   /**
    * Updates the win property
-   * @method #checkWin
    * @private
+   * @memberof HalmaModel
+   * @method #checkWin
    */
   #checkWin() {
     this.#win = this.#finalPositions.every((position) => {

@@ -1,7 +1,11 @@
 {
     "source": {
         "include": [
-            "README.md"
+            "README.md",
+            "src/assets/del-castillo-daniel-halma/js/halma-client.js",
+            "src/assets/del-castillo-daniel-halma/js/halma-controller.js",
+            "src/assets/del-castillo-daniel-halma/js/halma-model.js",
+            "src/assets/del-castillo-daniel-halma/js/halma-view.js"
         ]
     },
     "opts": {
