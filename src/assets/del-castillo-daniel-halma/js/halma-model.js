@@ -100,7 +100,6 @@ export class HalmaModel {
    */
   startGame() {
     this.#numberOfMoves = 0;
-    this.#win = false;
     for (let i = 0; i < this.#grid.length; i++) {
       for (let j = 0; j < this.#grid[0].length; j++) {
         this.#grid[i][j] = false;
@@ -111,6 +110,7 @@ export class HalmaModel {
     });
     this.#focused = undefined;
     this.#lastJump = undefined;
+    this.#checkWin();
   }
 
   /**
