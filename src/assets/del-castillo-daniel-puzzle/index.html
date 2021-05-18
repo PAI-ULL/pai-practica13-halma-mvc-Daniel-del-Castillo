@@ -4,24 +4,24 @@
   Thirteenth assignment
   Grado en Ingeniería Informática
   @author Daniel del Castillo de la Rosa
-  @date 14/05/2021
+  @date 18/05/2021
   @file This file contains the home page of this assignment
 
 -->
 <!DOCTYPE html>
 
 <head>
-    <title>Halma</title>
+    <title>Puzzle</title>
     <link rel="stylesheet" href="../style.css">
-    <script defer type="module" src="js/halma-client.js"></script>
+    <script defer type="module" src="js/puzzle-client.js"></script>
 </head>
 
 <body>
     <nav class="navbar">
         <ul>
             <li><a href="/">Home</a> </li>
-            <li><a href="/del-castillo-daniel-halma" class="active">Halma</a></li>
-            <li><a href="/del-castillo-daniel-puzzle">Puzzle</a></li>
+            <li><a href="/del-castillo-daniel-halma">Halma</a></li>
+            <li><a href="/del-castillo-daniel-puzzle" class="active">Puzzle</a></li>
             <li><a href="https://app.codecov.io/gh/PAI-ULL/pai-p13-halma-mvc-Daniel-del-Castillo">
                     Code coverage
                 </a></li>
@@ -31,7 +31,7 @@
         </ul>
     </nav>
     <div id='container'>
-        <canvas id='canvas' width="900" height="900">A halma board</canvas>
+        <canvas id='canvas' width="900" height="900">A puzzle</canvas>
         <div id='ui-container'>
             <a id='moves'>Moves: 0</a>
             <button id="restart">Restart the game</button>

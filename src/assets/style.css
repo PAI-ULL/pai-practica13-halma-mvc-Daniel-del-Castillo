@@ -44,3 +44,6 @@ textarea {
   margin: 20px;
   flex-direction: column;
 }
+button {
+  font-size: 24px;
+}
